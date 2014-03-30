@@ -2,11 +2,6 @@
 
 Thanks to Jordan Schroter, this is my first fork. I'm creating skateboard in CSS to mimic actual skateboard tricks
 
-* Support for CSS3 animations.
-* Allowing mulitple elements to be animated with the same instance.
-* Forcing hardware acceleration to improve iOS performance.
-* Reduce internal state to allow for branching off of transitions without mutatation.
-
 ##Credits
 
 Proparty was inspired by [move.js](https://github.com/visionmedia/move.js), special thanks to the creators for an awesome library!

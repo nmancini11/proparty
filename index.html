@@ -3,66 +3,50 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>proparty.js</title>
+  <title>Flip Tricks</title>
   <link href="css/style.css" rel="stylesheet">
-  <link href="css/prettify.css" rel="stylesheet">
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'>
+  <!-- <link href="css/prettify.css" rel="stylesheet"> -->
+  <!-- <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic' rel='stylesheet' type='text/css'> -->
+  <link href='http://fonts.googleapis.com/css?family=Audiowide|Roboto:400,300,100,500' rel='stylesheet' type='text/css'>
   <body>
     
 
-    <div class="container">
-      <div class="jumbotron">
-        <h2>
-          Welcome to flip tricks!
-        </h2>
-        <p>
-          <div id="da-streetz" class="demo-container">
-            <div class="demo demo-one"><span id="bolts-left"></span><span id="bolts-right"></span></div>
-            <div class="demo-controls">
-              <p class="demo-text"></p>
-            </div>
-            </div>
+    <div class="container-fluid">
+          <div id="da-streetz" class="trick-container">
+            <h3>FlipTricks.js</h3>
+              <div class="board"> 
+                <!-- top of board -->
+                <div class="trick-one face top"><span id="bolts-left"></span><span id="bolts-right"></span></div>
+                <!-- bottom of board -->
+                <!-- <div class="trick-two bottom">Bottomm</div>  -->
+                <section id="tricks">
+                  <button type="button" class="btn play" data-play="kickflip">Kickflip</button>
+                  <button type="button" class="btn play" data-play="varialflip" data-play="ease">Varial Flip</button>
+                  <button type="button" class="btn play" data-play="treflip" data-play="ease">Treflip</button>
+                  <button type="button" class="btn play" data-play="heelflip">Heelflip</button>
+                  <button type="button" class="btn play" data-play="shuvit">Shuvit</button>
+                  <!-- <button type="button" class="btn manual" data-play="manual">Manual</button> -->
+                </section>
+              </div> 
       </div>
 
-      <div class="row">
-        <section id="kickflip" class="span4">
-          <h2><a href="#kickflip">Kickflip</a></h2>
-          <p>Apply kickflip using the <code>.kickflip</code> method.</p>
-          <button type="button" class="btn play" data-play="kickflip">Kickflip</button>
-        </section>
-        
-        <section id="treflip" class="span4">
-          <h2><a href="#treflip">Treflip</a></h2>
-          <p>Apply treflip using the <code>.treflip</code> method.</p>
-          <button type="button" class="btn play" data-play="treflip" data-play="ease">Treflip</button>
-        </section>
+      <div id="content" class="container">
+        <div class="row">
+          <div class="span8 offset4">
+              <h1>IE Skate</h1>
+              <p class="lead">I like skateboards so much, I decided to replicate that experience with a little HTML / CSS / Javascript. Enjoy!</p>
+              <a class="btn btn-large btn-primary" href="#">Sign up today</a>
+          </div>
+          <!-- <section id="credit">
+            <h2><a href="#credit">Credits</a></h2>
+            <p>FlipTricks was inspired by <a href="http://jschr.github.io/proparty/">Proparty</a> which was inspired by <a href="https://github.com/visionmedia/move.js">move.js</a>, special thanks to both creators!</p> 
+          </section> -->
+        </div>
+      </div>
+</div>
 
-        <section id="shuvit" class="span4">
-          <h2><a href="#shuvit">Shuvit</a></h2>
-          <p>Apply shuvit using the <code>.shuvit</code> method.</p>
-          <button type="button" class="btn play" data-play="shuvit">Shuvit</button>
-        </section>
-
-        <section id="ollie" class="span4">
-          <h2><a href="#ollie">Ollie</a></h2>
-          <p>Apply ollie using the <code>.ollie</code> method.</p>
-          <button type="button" class="btn play" data-play="ollie">Ollie</button>
-        </section>
-    </div>
-    <embed height="50" width="50" src="audio/skate.mp3">
-
-    
-
-
-      <!-- <section id="credit">
-        <h2><a href="#credit">Credits</a></h2>
-        <p>Proparty was inspired by <a href="https://github.com/visionmedia/move.js">move.js</a>, special thanks to the creators for an awesome library!</p> 
-      </section> -->
-
-    </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
-    <script src="js/prettify.js"></script>
     <script src="proparty.js"></script>
     <script src="js/main.js"></script>
   </body>
